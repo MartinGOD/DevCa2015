@@ -101,7 +101,7 @@ app.get("/api/users/city/:city", function(req, res){
 })
 
 // Q4
-app.delete("api/users/:username", function(req,res){
+app.delete("api/users/:username", function(req,res)
 	var username = req.param("username");
 	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 	findUserByUserName(users, username, function(record, index){
